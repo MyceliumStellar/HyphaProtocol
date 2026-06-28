@@ -1,0 +1,32 @@
+{
+  "name": "agent-node",
+  "version": "1.0.0",
+  "description": "Agent-node middleware and MCP server for Stellar A2A Protocol",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts",
+    "server": "ts-node-esm src/server.ts",
+    "client": "ts-node-esm src/client.ts",
+    "agent:xmtp": "ts-node-esm src/xmtp-listener.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "@stellar/stellar-sdk": "^12.3.0",
+    "@xmtp/node-sdk": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.17.0",
+    "express": "^4.19.2",
+    "stellar-agent-kit": "^1.0.6",
+    "stellar-x402": "^0.4.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}

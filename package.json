@@ -1,0 +1,17 @@
+{
+  "name": "hypha-protocol-root",
+  "private": true,
+  "workspaces": [
+    "agent-node"
+  ],
+  "scripts": {
+    "agent:dev": "npm run dev --workspace=agent-node",
+    "agent:server": "npm run server --workspace=agent-node",
+    "agent:client": "npm run client --workspace=agent-node",
+    "agent:xmtp": "npm run agent:xmtp --workspace=agent-node",
+    "agent:build": "npm run build --workspace=agent-node",
+    "agent:start": "npm run start --workspace=agent-node",
+    "contract:build": "stellar contract build --manifest-path contracts/registry/Cargo.toml",
+    "contract:test": "cargo test --manifest-path contracts/registry/Cargo.toml"
+  }
+}
