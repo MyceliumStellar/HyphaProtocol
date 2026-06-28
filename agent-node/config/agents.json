@@ -1,0 +1,8 @@
+{
+  "oracle": {
+    "stellar_address": "oracle*hypha.network",
+    "account_id": "GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5",
+    "mcp_endpoint": "http://localhost:3000/agent/execute",
+    "agent_id": 1
+  }
+}
